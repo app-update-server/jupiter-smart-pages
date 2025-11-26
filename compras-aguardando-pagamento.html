@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aguardando Pagamento - REC Vendas V5.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* Mesma base CSS da anterior para consistência */
+        :root { --brand-blue: #2563eb; --pending-yellow: #ca8a04; --bg-gray: #f3f4f6; --text-dark: #111827; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background-color: var(--bg-gray); display: flex; justify-content: center; align-items: center; min-height: 100vh; color: var(--text-dark); }
+        .card-container { background: #ffffff; width: 90%; max-width: 500px; padding: 40px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); text-align: center; }
+        /* Ícone Amarelo */
+        .icon-box { width: 100px; height: 100px; background: #fef9c3; color: var(--pending-yellow); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; }
+        .icon-box svg { width: 50px; height: 50px; }
+        h1 { font-weight: 800; font-size: 26px; margin-bottom: 10px; line-height: 1.2; }
+        p.subtitle { color: #6b7280; font-size: 16px; margin-bottom: 30px; }
+        /* Box de Prazos */
+        .info-list { text-align: left; background: #f9fafb; border-radius: 12px; padding: 20px; margin-bottom: 30px; }
+        .info-list li { margin-bottom: 12px; color: #4b5563; font-size: 15px; list-style: none; display: flex; align-items: center; }
+        .info-list li svg { width: 20px; height: 20px; margin-right: 10px; color: var(--pending-yellow); }
+        .footer-note { margin-top: 30px; font-size: 15px; color: #4b5563; line-height: 1.5; }
+        .highlight { color: var(--brand-blue); font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        </div>
+        <h1>Pedido Recebido! Aguardando o banco.</h1>
+        <p class="subtitle">Sua licença do Júpiter Smart Pro já está reservada. Assim que o banco confirmar, nós a liberamos.</p>
+
+        <ul class="info-list">
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                <strong>Pix:</strong> Geralmente libera em poucos minutos.
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                <strong>Boleto:</strong> De 1 a 3 dias úteis para compensar.
+            </li>
+        </ul>
+
+        <p class="footer-note">Não precisa fazer mais nada! <span class="highlight">Você receberá o acesso automaticamente por e-mail</span> assim que o pagamento for confirmado.</p>
+    </div>
+</body>
+</html>
